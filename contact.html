@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6ae130d0b9.js" crossorigin="anonymous"></script>
+    <script src="https://kit-pro.fontawesome.com/releases/v5.10.1/js/pro.min.js" data-auto-fetch-svg></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="icon" href="img/erenes_favicon.png" type="image/png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Erenes Emlak</title>
+</head>
+<style>
+    .h1 {
+        position: relative;
+        border-bottom: 1px solid #ccc;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .h1 span {
+        position: absolute;
+        top: 13px;
+        background: #F1EEE9;
+        left: 28%;
+        padding: 0 1%;
+    }
+
+    .hr {
+
+        border: none;
+        border-left: 1px solid black;
+        height: 100vh;
+        width: 1px;
+        margin-left: 50%;
+    }
+</style>
+
+<body>
+    <!-- Header -->
+    <div class="container" style="margin-bottom: 90px;">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Navbar -->
+                <div id="nav" class="navbar navbar-expand-lg fw-bold fixed-top shadow nav-style">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/erenes_yapi_yatay_logo.png" alt="" width="200" height="75">
+                        </a>
+                        <div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a id="navLink" class="nav-link" aria-current="page"
+                                            href="index.html">Ana
+                                            Sayfa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="navLink" class="nav-link" href="project.html">Projelerimiz</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="navLink" class="nav-link" href="abaut.html">Hakkımızda</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="navLink" class="nav-link active" href="contact.html">İletişim</a>
+                                    </li>
+                                    <li class="nav-item text-bg-danger" style="border-radius: 10px;">
+                                        <a id="navLink" class="nav-link text-white" href="login.html">Giriş Yap</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 border-end">
+                <div class="me-3">
+                    <h1 class="h1"><span>İletişim Formu</span></h1>
+                    <form class="mt-5" action="post">
+                        <div class="input-group py-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">İsim</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group py-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">E-Posta</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group py-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Konu</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group py-3">
+                            <span class="input-group-text">Mesaj</span>
+                            <textarea class="form-control" aria-label="With textarea" style="height: 150px;"></textarea>
+                        </div>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-4">
+                            <button class="btn btn-lg btn_btn" type="button">Gönder</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="col-sm-6">
+                <div class="ms-3">
+                    <h1 class="h1"><span>Adres Bilgileri</span></h1>
+
+                    <i class="fa-solid fa-map-location-dot mt-5" style="font-size: 1.3rem;"></i>
+                    <i class="fa-solid ms-1" style="font-size: 1.3rem;">ADRES</i>
+                    <span class="d-flex mt-3" style="font-size: 1.2rem;">Oba Mah. Gaziparaş Cd. Yeni Küme Evler Sk. NO:
+                        1/3 Erenes Plaza Alanya
+                        / Antalya</span>
+                    <hr>
+                    <i class="fa-duotone fa-phone d-flex" style="--fa-primary-color: black; --fa-secondary-color: rgb(182, 181, 181); 
+                        font-size: 1.3rem; --fa-secondary-opacity: 0.20;">
+                        <i class="fa-solid ms-4" style="font-size: 1.3rem;">Telefon</i>
+                    </i>
+
+                    <div class="mt-4" style="font-size: 1.2rem;">
+                        <p>0 (541) 107 0 107</p>
+                        <p>0 (242) 512 27 27</p>
+                    </div>
+
+                    <i class="fa-duotone fa-envelope" style="font-size: 1.3rem;"></i>
+                    <i class="fa-solid ms-2" style="font-size: 1.3rem;">E-POSTA</i>
+                    <div class="mt-4" style="font-size: 1.2rem;">
+                        <p>info@erenesyapi.com</p>
+                    </div>
+
+
+                    <iframe class="mt-4"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d673.8918758614792!2d32.03841383662032!3d36.539931582433226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14dc99540711c84d%3A0x1f9d5dbafbde4a75!2sErenes%20Plaza!5e0!3m2!1str!2str!4v1656407350687!5m2!1str!2str"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-5">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img src="img/erenes_yapi_yatay_logo.png" width="100" /></i> Erenes Emlak
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-5">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Projelerimiz
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Oba Slince Park Premium</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Oba Slince Park</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Oba Slince Park Premium</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Oba Slince Park</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-5">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Sosyal Medya
+                        </h6>
+                        <div style="display: flex; flex-direction: column;">
+                            <a href="" class="me-4 text-reset mb-3">
+                                <img src="https://img.icons8.com/color/48/000000/facebook-new.png" width="50" /></a>
+                            <!-- <a href="" class="me-4 text-reset">
+                                <i class="fab fa-twitter"></i></a>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-google"></i></a> -->
+                            <a href="" class="me-4 text-reset mb-3">
+                                <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" width="50" /></a>
+                            <!-- <a href="" class="me-4 text-reset">
+                                <i class="fab fa-linkedin"></i></a>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-github"></i></a> -->
+                            <a href="" class="me-4 text-reset mb-3">
+                                <img src="img/direkçi logo.svg" width="50" /></a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 mt-5">
+                            İletişim
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Oba Mah. Gaziparaş Cd. Yeni Küme Evler Sk. NO: 1/3 Erenes
+                            Plaza Alanya / Antalya</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@erenesemlak.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 90 541 107 01 07</p>
+                        <p><i class="fas fa-print me-3"></i> + 90 242 512 27 27</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="https://ismailcanaydin.com/">ismailcanaydin.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
