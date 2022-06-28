@@ -28,3 +28,17 @@ body {
   background-color: #F1EEE9;
   height: 70px;
 }
+
+.top-bg-img {
+  background-image: url('/img/2863133.webp');
+  background-size: cover;
+  width: 100%;
+  width: auto;
+  height: 648px;
+  background-repeat: no-repeat;
+}
+
+.top-bg-color {
+  background: linear-gradient(rgba(70, 0, 0, .8), rgba(34, 2, 8, .5));
+  height: 648px;
+}
