@@ -92,10 +92,10 @@
       "price": "3.000.000",
       "sizeM2": "130",
       "roomSize": "3+1",
-      "bathroomSize": "",
-      "buildingAge": "",
-      "floor": "",
-      "floorTotal": "",
+      "bathroomSize": "1+1",
+      "buildingAge": "1",
+      "floor": "2",
+      "floorTotal": "5",
       "images": [
         "oba-silence-premium2-1030x728.jpg",
         "oba-silence-premium3-1030x728.jpg"

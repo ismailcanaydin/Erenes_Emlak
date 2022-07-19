@@ -1,4 +1,3 @@
-
 const createOptionProject = (project) => {
     const optionProject = document.createElement('div');
     optionProject.innerHTML = `
